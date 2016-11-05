@@ -3,6 +3,7 @@ use std::fs;
 use std::io::Read;
 
 fn main() {
+    // read the buffer
     let rom_name = env::args().nth(1).unwrap();
     
     let mut rom = fs::File::open(&rom_name).unwrap();
